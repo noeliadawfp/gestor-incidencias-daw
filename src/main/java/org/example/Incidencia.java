@@ -11,7 +11,7 @@ public class Incidencia {
         this.estado = estado;
     }
 
-    // Getters
+
     public int getId() { return id; }
     public String getDescripcion() { return descripcion; }
     public String getEstado() { return estado; }

@@ -4,10 +4,10 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class IncidenciaDAO { // <-- Inicio de la clase
+public class IncidenciaDAO {
 
     public void insertarIncidencia(String titulo, String descripcion, int usuario_id) {
-        // La tabla pide: titulo, descripcion y usuario_id (el id se genera solo)
+
         String sql = "INSERT INTO incidencias (titulo, descripcion, usuario_id) VALUES (?, ?, ?)";
 
         try (Connection con = Conexion.obtenerConexion();
